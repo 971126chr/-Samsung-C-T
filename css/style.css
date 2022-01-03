@@ -1,0 +1,45 @@
+.wrap {
+    width: 1280px;
+    margin: 0 auto;
+}
+header.header {
+    padding: 0 160px;
+}
+h1.header-logo, ul.header-list {
+    line-height: 56px;
+    display: inline-block;
+}
+h1.header-logo a {
+    font-size: 0;
+    background: url("../img/header/logo.png") no-repeat center;
+    padding: 31px 75px;
+}
+ul.header-list::after {
+    display: inline-block;
+    content: "";
+    clear: both;
+}
+ul.header-list {
+    margin-left: 109px;
+}
+ul.header-list li {
+    float: left;
+}
+ul.header-list li a {
+    font-size: 0;
+    background: url("../img/header/header-list-1.png") no-repeat left;
+    padding: 34px 81px 28px 0;
+}
+ul.header-list li:nth-child(2) a {
+    background: url("../img/header/header-list-2.png") no-repeat center;
+    padding: 34px 69px 28px 67.5px;
+
+}
+ul.header-list li:nth-child(3) a {
+    background: url("../img/header/header-list-3.png") no-repeat center;
+    padding: 34px 55px 28px 57px;
+}
+ul.header-list li:last-child a {
+    background: url("../img/header/header-list-4.png") no-repeat center;
+    padding: 34px 33.5px 28px 75px;
+}
