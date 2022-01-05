@@ -5,7 +5,7 @@
 header {
     background: url("../img/header/header-bg.png") repeat-x;
 }
-.header-wrap, .nav-wrap {
+.header-content, .nav-content, .section-content {
     width: 960px;
     position: relative;
     padding: 0 160px;
@@ -21,7 +21,7 @@ h1.header-logo a {
     background: url("../img/header/logo.png") no-repeat center;
     padding: 31px 75px;
 }
-ul.header-list::after, ul.header-right-list::after, ul.nav-list::after {
+ul.header-list::after, ul.header-right-list::after, ul.nav-list::after, ul.build-list::after {
     display: block;
     content: "";
     clear: both;
@@ -30,7 +30,7 @@ ul.header-list {
     vertical-align: -webkit-baseline-middle;
     margin-left: 109px;
 }
-ul.header-list li, ul.header-right-list li, ul.nav-list li {
+ul.header-list li, ul.header-right-list li, ul.nav-list li, ul.build-list li {
     float: left;
 }
 ul.header-list li a {
@@ -129,15 +129,16 @@ nav {
     background: url("../img/nav/nav-bg.png") repeat-x;
     min-height: 35px;
 }
-.nav-wrap {
+.nav-content {
     padding: 0 6px 0 14px;
     line-height: 22px;
 }
 ul.nav-list {
-    padding-left: 16px;
+    padding-left: 23px;
 }
 ul.nav-list li {
     min-height: 35px;
+    padding-right: 14px;
 }
 ul.nav-list li:not(:last-child) {
     background: url("../img/nav/nav-list-bar.png") no-repeat center right;
@@ -145,33 +146,140 @@ ul.nav-list li:not(:last-child) {
 ul.nav-list li a {
     font-size: 0;
     background: url("../img/nav/nav-list-1.png") no-repeat center;
-    padding: 17.5px 63px 17.5px 55px;
+    padding: 17.5px 48.5px;
+}
+ul.nav-list li:nth-child(2) {
+    padding: 0 15px 0 13px;
 }
 ul.nav-list li:nth-child(2) a {
     background: url("../img/nav/nav-list-2.png") no-repeat center;
-    padding: 17.5px 55.5px 17.5px 66.5px;
+    padding: 17.5px 47px;
+}
+ul.nav-list li:nth-child(3) {
+    padding: 0 13px 0 12px;
 }
 ul.nav-list li:nth-child(3) a {
     background: url("../img/nav/nav-list-3.png") no-repeat center;
-    padding: 17.5px 67.5px 17.5px 66.5px;
+    padding: 17.5px 54.5px;
+}
+ul.nav-list li:nth-child(4) {
+    padding: 0 16px 0 11px;
 }
 ul.nav-list li:nth-child(4) a {
     background: url("../img/nav/nav-list-4.png") no-repeat center;
-    padding: 17.5px 55px 17.5px 55px;
+    padding: 17.5px 40.5px;
+}
+ul.nav-list li:nth-child(5) {
+    padding: 0 17px 0 14px;
 }
 ul.nav-list li:nth-child(5) a {
     background: url("../img/nav/nav-list-5.png") no-repeat center;
-    padding: 17.5px 55px 17.5px 55px;
+    padding: 17.5px 36.5px;
+}
+ul.nav-list li:nth-child(6) {
+    padding: 0 19px 0 14px;
 }
 ul.nav-list li:nth-child(6) a {
     background: url("../img/nav/nav-list-6.png") no-repeat center;
-    padding: 17.5px 55px 17.5px 55px;
+    padding: 17.5px 37.5px;
+}
+ul.nav-list li:nth-child(7) {
+    padding: 0 17px 0 12px;
 }
 ul.nav-list li:nth-child(7) a {
     background: url("../img/nav/nav-list-7.png") no-repeat center;
-    padding: 17.5px 55px 17.5px 55px;
+    padding: 17.5px 48px;
+}
+ul.nav-list li:last-child {
+    padding-left: 14px;
 }
 ul.nav-list li:last-child a {
     background: url("../img/nav/nav-list-8.png") no-repeat center;
-    padding: 17.5px 55px 17.5px 55px;
+    padding: 17.5px 43.5px;
+}
+
+/*section start*/
+
+section {
+    width: 100%;
+    background: #c6dbe3;
+}
+.section-content {
+    padding-top: 233px;
+}
+img.section-bg {
+    position: absolute;
+    top: 0;
+    left: 126px;
+}
+ul.indicator {
+    position: absolute;
+    top: 11px;
+    right: 160px;
+}
+ul.indicator li {
+    min-height: 25px;
+    background: #6d6d6d;
+    box-shadow: 3px 4px 3px #a1b2b8;
+}
+ul.indicator li:nth-child(2) {
+    margin-top: 5px;
+    background: #05b1ca;
+}
+ul.indicator li:last-child {
+    background: #3c6ee7;
+}
+ul.indicator li a {
+    font-size: 0;
+    background: url("../img/section/indicator-text-1.png") no-repeat center;
+    padding: 14.5px 37.5px 10.5px;
+}
+ul.indicator li:nth-child(2) a {
+    background: url("../img/section/indicator-text-2.png") no-repeat center;
+}
+ul.indicator li:last-child a {
+    background: url("../img/section/indicator-text-3.png") no-repeat center;
+}
+.build {
+    width: 310px;
+    height: 490px;
+    border-top: 7px solid #005f9a;
+    background: #ffffff;
+    position: relative;
+}
+img.build-deco {
+    position: absolute;
+    top: -206px;
+    left: 7px;
+}
+.build .shortcut {
+    padding: 15px 17px 0 13px;
+}
+h2.shortcut-h2 {
+    padding: 0 35px 11px 27px;
+    background: url("../img/section/shortcut-h2-border.png") no-repeat bottom;
+}
+span.shortcut-h2-text {
+    font-size: 0;
+    background: url("../img/section/shortcut-h2.png") no-repeat center right;
+    padding: 13px 89.5px 13px 96.5px;
+}
+.build ul.build-list {
+    padding: 0 21px 0 15px;
+}
+.build ul.build-list li::before {
+    background: url("../img/section/bulid-list-marker.png") no-repeat left center;
+    content: "";
+    padding: 0 2px;
+}
+.build ul.build-list li:not(:nth-child(3n)) {
+    padding: 0 15px;
+}
+.build ul.build-list li:nth-child(3n) {
+    padding: 0 14px;
+}
+.build ul.build-list li a {
+    font-size: 0;
+    background: url("../img/section/build-list-1.png") no-repeat center;
+    padding: 14px 20.5px 2px 27.5px;
 }
