@@ -21,7 +21,7 @@ h1.header-logo a {
     background: url("../img/header/logo.png") no-repeat center;
     padding: 31px 75px;
 }
-ul.header-list::after, ul.header-right-list::after, ul.nav-list::after, ul.build-list::after {
+ul.header-list::after, ul.header-right-list::after, ul.nav-list::after, ul.build-list::after, ul.build-sns-list::after {
     display: block;
     content: "";
     clear: both;
@@ -30,7 +30,7 @@ ul.header-list {
     vertical-align: -webkit-baseline-middle;
     margin-left: 109px;
 }
-ul.header-list li, ul.header-right-list li, ul.nav-list li, ul.build-list li {
+ul.header-list li, ul.header-right-list li, ul.nav-list li, ul.build-list li, ul.build-sns-list li {
     float: left;
 }
 ul.header-list li a {
@@ -262,15 +262,17 @@ h2.shortcut-h2 {
 span.shortcut-h2-text {
     font-size: 0;
     background: url("../img/section/shortcut-h2.png") no-repeat center right;
-    padding: 13px 89.5px 13px 96.5px;
+    padding: 17px 89.5px 9px 90.5px;
 }
 .build ul.build-list {
-    padding: 0 21px 0 15px;
+    padding: 4px 21px 10px 14px;
+    line-height: 17.2px;
 }
 .build ul.build-list li::before {
     background: url("../img/section/bulid-list-marker.png") no-repeat left center;
     content: "";
-    padding: 0 2px;
+    display: inline-block;
+    padding: 7px 1px 0;
 }
 .build ul.build-list li:not(:nth-child(3n)) {
     padding: 0 15px;
@@ -281,5 +283,85 @@ span.shortcut-h2-text {
 .build ul.build-list li a {
     font-size: 0;
     background: url("../img/section/build-list-1.png") no-repeat center;
-    padding: 14px 20.5px 2px 27.5px;
+    padding: 15px 20.5px 9px 20.5px;
+}
+.build ul.build-list li:nth-child(2) a {
+    background: url("../img/section/build-list-2.png") no-repeat center;
+}
+.build ul.build-list li:nth-child(3) a {
+    background: url("../img/section/build-list-3.png") no-repeat center;
+    padding: 15px 26px 9px 26px;
+}
+.build ul.build-list li:nth-child(4) a {
+    background: url("../img/section/build-list-4.png") no-repeat center;
+}
+.build ul.build-list li:last-child a {
+    background: url("../img/section/build-list-5.png") no-repeat center;
+}
+.news {
+    background: #e9f7fe;
+    padding: 13px 26px 29px 19px;
+    position: relative;
+}
+h3.news-h3 {
+    font-size: 0;
+    background: url("../img/section/news-h3.png") no-repeat right;
+    display: inline-block;
+    padding: 6px 17.5px 6px 18.5px;
+}
+button.news-more {
+    border: none;
+    background: url("../img/section/news-plus.png") no-repeat center;
+    padding: 8px;
+    position: absolute;
+    top: 18px;
+    right: 26px;
+}
+dl.news-list {
+    line-height: 20px;
+    margin-top: 18px;
+}
+dl.news-list dt {
+    float: left;
+    font-size: 11px;
+}
+dl.news-list dd {
+    text-align: right;
+    font-size: 12px;
+}
+.build-sns {
+    position: relative;
+    padding: 23px 25px 15px 19px;
+}
+h3.build-sns-h3 {
+    font-size: 0;
+    background: url("../img/section/sns-h3.png") no-repeat left;
+    padding: 6.5px 41.5px;
+}
+ul.build-sns-list {
+    position: absolute;
+    top: 13px;
+    right: 25px;
+}
+ul.build-sns-list li:not(:last-child) {
+    margin-right: 3px;
+}
+ul.build-sns-list li a {
+    font-size: 0;
+    background: url("../img/section/sns-btn-list-1.png") no-repeat;
+    padding: 9px;
+}
+ul.build-sns-list li:nth-child(2) a {
+    background: url("../img/section/sns-btn-list-2.png") no-repeat;
+}
+ul.build-sns-list li:nth-child(3) a {
+    background: url("../img/section/sns-btn-list-3.png") no-repeat;
+}
+ul.build-sns-list li:last-child a {
+    background: url("../img/section/sns-btn-list-4.png") no-repeat;
+}
+img.samsung-build-logo {
+    position: absolute;
+    top: 50px;
+    left: 20px;
 }
