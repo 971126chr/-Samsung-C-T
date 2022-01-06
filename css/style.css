@@ -21,7 +21,7 @@ h1.header-logo a {
     background: url("../img/header/logo.png") no-repeat center;
     padding: 31px 75px;
 }
-ul.header-list::after, ul.header-right-list::after, ul.nav-list::after, ul.build-list::after, ul.build-sns-list::after {
+ul.header-list::after, ul.header-right-list::after, ul.nav-list::after, ul.build-list::after, ul.build-sns-list::after, ul.investment-list::after {
     display: block;
     content: "";
     clear: both;
@@ -30,7 +30,7 @@ ul.header-list {
     vertical-align: -webkit-baseline-middle;
     margin-left: 109px;
 }
-ul.header-list li, ul.header-right-list li, ul.nav-list li, ul.build-list li, ul.build-sns-list li {
+ul.header-list li, ul.header-right-list li, ul.nav-list li, ul.build-list li, ul.build-sns-list li, ul.investment-list li {
     float: left;
 }
 ul.header-list li a {
@@ -205,7 +205,7 @@ section {
     background: #c6dbe3;
 }
 .section-content {
-    padding-top: 233px;
+    padding: 233px 160px 29px 160px;
 }
 img.section-bg {
     position: absolute;
@@ -240,12 +240,15 @@ ul.indicator li:nth-child(2) a {
 ul.indicator li:last-child a {
     background: url("../img/section/indicator-text-3.png") no-repeat center;
 }
-.build {
+.section-main > div {
     width: 310px;
-    height: 490px;
-    border-top: 7px solid #005f9a;
     background: #ffffff;
+    display: inline-block;
     position: relative;
+}
+.build {
+    border-top: 7px solid #005f9a;
+    border-bottom: 3px solid #05b1ca;
 }
 img.build-deco {
     position: absolute;
@@ -331,7 +334,7 @@ dl.news-list dd {
 }
 .build-sns {
     position: relative;
-    padding: 23px 25px 15px 19px;
+    padding: 23px 25px 20px 19px;
 }
 h3.build-sns-h3 {
     font-size: 0;
@@ -364,4 +367,99 @@ img.samsung-build-logo {
     position: absolute;
     top: 50px;
     left: 20px;
+}
+.sns-shortcut {
+    margin-top: 20px;
+    padding-left: 66px;
+    font-size: 0;
+}
+.sns-shortcut span.sns-shortcut-text {
+    background: url("../img/section/sns-c-t-text.png") no-repeat left;
+    padding: 6.5px 39px;
+    display: block;
+}
+.sns-shortcut button.sns-shortcut-btn {
+    background: url("../img/section/youtube-shortcut-btn-bg.png") repeat-x;
+    border: 1px solid #959595;
+    border-radius: 3px;
+    box-shadow: 0 1px #e5e5e5;
+    line-height: 23px;
+    margin-top: 6px;
+    padding: 0 16px;
+}
+.sns-shortcut button.sns-shortcut-btn span.sns-shortcut-btn-text {
+    background: url("../img/section/youtube-shortcut-btn-text.png") no-repeat center;
+    padding: 6px 37.5px;
+}
+.information {
+    border-top: 3px solid #6d6d6d;
+    border-bottom: 3px solid #7b7b7b;
+    vertical-align: top;
+    margin-left: 9px;
+    z-index: 1;
+}
+.information .banner {
+    padding: 31px 0 22px 0;
+    border-bottom: 1px solid #c0c0c0;
+}
+img.banner-content {
+    padding-left: 35px;
+}
+.information .banner a.before-arrow, .information .banner a.next-arrow {
+    background: url("../img/section/respect-arrow-left.png") no-repeat center;
+    padding: 26px 16.5px;
+    position: absolute;
+    left: 0;
+}
+.information .banner a.next-arrow {
+    background: url("../img/section/respect-arrow-right.png") no-repeat center;
+    left: initial;
+    right: 0;
+}
+.promotion {
+    background: #efefef;
+    padding-top: 3px;
+    position: relative;
+}
+.promotion img.promotion-img {
+    padding-left: 62px;
+}
+.black-bar {
+    background: url("../img/section/multicultural-family-text-bg.png") repeat-x;
+    opacity: 0.8;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+    width: 100%;
+    letter-spacing: -1px;
+    position: absolute;
+    bottom: 0;
+}
+.information .promotion .black-bar a.before-arrow,
+.information .promotion .black-bar a.next-arrow {
+    background: url("../img/section/promotion-arrow-left.png") no-repeat center;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.information .promotion .black-bar a.next-arrow {
+    background: url("../img/section/promotion-arrow-right.png") no-repeat center;
+    left: initial;
+    right: 0;
+}
+.investment {
+    padding: 18px 33px 15px 17px;
+}
+h3.investment-h3 {
+    background: url("../img/section/investment-h3.png") no-repeat left;
+    font-size: 0;
+    padding: 6px 0;
+}
+ul.investment-list {
+    padding-left: 19px;
+}
+ul.investment-list li a{
+    font-size: 12px;
 }
