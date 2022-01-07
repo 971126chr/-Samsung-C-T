@@ -5,7 +5,7 @@
 header {
     background: url("../img/header/header-bg.png") repeat-x;
 }
-.header-content, .nav-content, .section-content {
+.header-content, .nav-content, .section-content, .site-map {
     width: 960px;
     position: relative;
     padding: 0 160px;
@@ -21,7 +21,7 @@ h1.header-logo a {
     background: url("../img/header/logo.png") no-repeat center;
     padding: 31px 75px;
 }
-ul.header-list::after, ul.header-right-list::after, ul.nav-list::after, ul.build-list::after, ul.build-sns-list::after, ul.investment-list::after {
+ul.header-list::after, ul.header-right-list::after, ul.nav-list::after, ul.build-list::after, ul.build-sns-list::after, ul.investment-list::after, ul.pr-center-list::after, ul.recruit-list::after, ul.trading-list::after {
     display: block;
     content: "";
     clear: both;
@@ -30,7 +30,7 @@ ul.header-list {
     vertical-align: -webkit-baseline-middle;
     margin-left: 109px;
 }
-ul.header-list li, ul.header-right-list li, ul.nav-list li, ul.build-list li, ul.build-sns-list li, ul.investment-list li {
+ul.header-list li, ul.header-right-list li, ul.nav-list li, ul.build-list li, ul.build-sns-list li, ul.investment-list li, ul.pr-center-list li, ul.recruit-list li, ul.trading-list li {
     float: left;
 }
 ul.header-list li a {
@@ -255,7 +255,7 @@ img.build-deco {
     top: -206px;
     left: 7px;
 }
-.build .shortcut {
+.build .shortcut, .trading .shortcut {
     padding: 15px 17px 0 13px;
 }
 h2.shortcut-h2 {
@@ -271,7 +271,7 @@ span.shortcut-h2-text {
     padding: 4px 21px 10px 14px;
     line-height: 17.2px;
 }
-.build ul.build-list li::before {
+.build ul.build-list li::before, .trading ul.trading-list li::before {
     background: url("../img/section/bulid-list-marker.png") no-repeat left center;
     content: "";
     display: inline-block;
@@ -394,7 +394,7 @@ img.samsung-build-logo {
 .information {
     border-top: 3px solid #6d6d6d;
     border-bottom: 3px solid #7b7b7b;
-    vertical-align: top;
+    vertical-align: bottom;
     margin-left: 9px;
     z-index: 1;
 }
@@ -450,6 +450,7 @@ img.banner-content {
     right: 0;
 }
 .investment {
+    border-bottom: 1px solid #e2e2e2;
     padding: 18px 33px 15px 17px;
 }
 h3.investment-h3 {
@@ -458,8 +459,241 @@ h3.investment-h3 {
     padding: 6px 0;
 }
 ul.investment-list {
+    margin-top: 13px;
     padding-left: 19px;
 }
-ul.investment-list li a{
+ul.investment-list li {
+    width: 33%;
+}
+ul.investment-list li:nth-child(2) {
+    text-align: center;
+    margin-left: 2.4px;
+}
+ul.investment-list li:last-child {
+    text-align: right;
+}
+ul.investment-list li a {
+    padding: 8px 0px 32px 0;
+}
+ul.investment-list li a span.investment-list-text{
     font-size: 12px;
+    letter-spacing: -0.75px;
+    margin-top: 7px;
+    display: block;
+}
+ul.investment-list li:nth-child(2) a span.investment-list-text {
+    text-align: center;
+}
+ul.investment-list li:last-child a span.investment-list-text {
+    text-align: right;
+}
+.pr-center {
+    padding: 22px 25px 22px 17px;
+    line-height: 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+h3.pr-center-h3 {
+    background: url("../img/section/pr-center-h3.png") no-repeat left center;
+    font-size: 0;
+    padding: 6px 32px 9px;
+    display: inline-block;
+}
+ul.pr-center-list, ul.recruit-list {
+    margin-left: 30px;
+    line-height: 11px;
+    vertical-align: top;
+    display: inline-block;
+}
+ul.pr-center-list li:first-child {
+    padding-right: 15px;
+    background: url("../img/section/pr-center-bar.png") no-repeat right center;
+}
+ul.pr-center-list li:last-child {
+    margin-left: 12px;
+}
+ul.pr-center-list li a, ul.recruit-list li a {
+    font-size: 12px;
+    letter-spacing: -1.2px;
+}
+.recruit {
+    padding: 24px 0 20px 17px;
+}
+h3.recruit-h3 {
+    background: url("../img/section/recruit-h3.png") no-repeat;
+    font-size: 0;
+    padding: 6.5px 22.5px;
+    vertical-align: top;
+    display: inline-block;
+}
+ul.recruit-list {
+    line-height: 10px;
+    margin-left: 47px;
+}
+ul.recruit-list li:first-child {
+    background: url("../img/section/recruit-bar.png") no-repeat right center;
+    padding-right: 23px;
+}
+ul.recruit-list li:last-child {
+    margin-left: 20px;
+}
+.trading {
+    vertical-align: top;
+    border-top: 7px solid #3551b1;
+    border-bottom: 3px solid #3978ee;
+    margin-left: 9.78px;
+}
+.trading img.trading-deco {
+    position: absolute;
+     top: -114px;
+     left: 0;
+}
+h2.trading-h2 {
+    padding: 0 33px 11px 25px;
+}
+.trading .shortcut h2.trading-h2 span.shortcut-h2-text {
+    background: url("../img/section/trading-shortcut-h2.png") no-repeat center right;
+    padding-right: 91.5px;
+}
+.trading ul.trading-list {
+    padding: 10px 6px 16px 30px;
+    line-height: 12.2px;
+}
+ul.trading-list li:nth-child(3n+1) {
+    width: 89px;
+}
+ul.trading-list li:nth-child(3n+2) {
+    width: 92px;
+}
+ul.trading-list li:nth-child(5)::before {
+    margin-right: -5px;
+}
+ul.trading-list li a {
+    font-size: 0;
+    background: url("../img/section/trading-list-1.png") no-repeat center;
+    padding: 10.5px 26px 6.5px 26px;
+}
+ul.trading-list li:nth-child(2) a {
+    background: url("../img/section/trading-list-2.png") no-repeat center;
+    padding: 10.5px 11.5px 6.5px 10.5px;
+}
+ul.trading-list li:nth-child(3) a {
+    background: url("../img/section/trading-list-3.png") no-repeat center;
+    padding: 10.5px 11.5px 6.5px 11.5px;
+}
+ul.trading-list li:nth-child(4) a {
+    background: url("../img/section/trading-list-4.png") no-repeat center;
+    padding: 10.5px 21px 8.5px 21px;
+}
+ul.trading-list li:nth-child(5) a {
+    background: url("../img/section/trading-list-5.png") no-repeat center;
+    padding: 10.5px 31.5px 8.5px 21.5px;
+}
+ul.trading-list li:last-child a {
+    background: url("../img/section/trading-list-6.png") no-repeat center;
+    padding: 10.5px 26.5px 8.5px 26.5px;
+}
+.trading-news {
+    background: #ebf4ff;
+}
+.trading-news button.news-more {
+    top: 17px;
+    right: 27px;
+}
+.trading-news h3.news-h3 {
+    background: url("../img/section/trading-news-h3.png") no-repeat right;
+}
+.trading-sns h3.build-sns-h3 {
+    background: url("../img/section/trading-facebook-h3.png") no-repeat;
+}
+ul.trading-sns-list {
+    top: 15px;
+    right: 26px;
+}
+ul.trading-sns-list li:last-child a {
+    background: url("../img/section/facebook-btn.png") no-repeat;
+}
+.trading-sns-shortcut {
+    margin-top: 18px;
+    padding-left: 72px;
+}
+.trading-sns-shortcut span.sns-shortcut-text {
+    background: none;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    padding: 0;
+}
+.sns-like-btn-wrap {
+    margin-top: 8px;
+    padding-left: 1px;
+}
+.trading-sns-shortcut button.sns-shortcut-btn {
+    margin-top: 0;
+    line-height: 19px;
+    padding: 0 8px;
+}
+span.like-btn-text {
+    font-size: 12px;
+    background: url("../img/section/check.png") no-repeat left center;
+    padding-left: 14px;
+    line-height: 23px;
+    vertical-align: middle;
+}
+span.like-after {
+    font-size: 12px;
+    vertical-align: middle;
+    margin-left: 5px;
+    letter-spacing: -1px;
+}
+
+/* site-map start*/
+
+.site-map-wrap {
+    background: #ffffff;
+    padding: 27px 0 35px;
+}
+.site-map {
+    padding: 0;
+    border-right: 1px solid #eaeaea;
+    border-left: 1px solid #eaeaea;
+}
+.site-map > div {
+    display: inline-block;
+}
+.company-introduce {
+    width: 246px;
+    padding: 12px 0 0 21px;
+}
+.site-map > div > h2 {
+    font-size: 0;
+    padding: 7px 0;
+}
+h2.company-introduce-h2 {
+    background: url("../img/section-bottom/introduce-h2.png") no-repeat;
+}
+.company-introduce-list-wrap {
+    margin-top: 27px;
+}
+.site-map div dl {
+    display: inline-block;
+    vertical-align: top;
+}
+dl.company-introduce-list {
+    width: 129px;
+}
+.site-map div dl dt {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 23px;
+}
+.site-map div dl dd {
+    font-size: 11px;
+    line-height: 22px;
+    letter-spacing: -0.7px;
+}
+dt.interval {
+    margin-top: 7px;
+}
+.site-map div dl dt a, .site-map div dl dd a {
+    display: block;
 }
