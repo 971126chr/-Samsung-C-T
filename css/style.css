@@ -5,7 +5,7 @@
 header {
     background: url("../img/header/header-bg.png") repeat-x;
 }
-.header-content, .nav-content, .section-content, .site-map {
+.header-content, .nav-content, .section-content, .site-map, .footer-content {
     width: 960px;
     position: relative;
     padding: 0 160px;
@@ -21,7 +21,7 @@ h1.header-logo a {
     background: url("../img/header/logo.png") no-repeat center;
     padding: 31px 75px;
 }
-ul.header-list::after, ul.header-right-list::after, ul.nav-list::after, ul.build-list::after, ul.build-sns-list::after, ul.investment-list::after, ul.pr-center-list::after, ul.recruit-list::after, ul.trading-list::after {
+ul.header-list::after, ul.header-right-list::after, ul.nav-list::after, ul.build-list::after, ul.build-sns-list::after, ul.investment-list::after, ul.pr-center-list::after, ul.recruit-list::after, ul.trading-list::after, ul.footer-list::after {
     display: block;
     content: "";
     clear: both;
@@ -30,7 +30,7 @@ ul.header-list {
     vertical-align: -webkit-baseline-middle;
     margin-left: 109px;
 }
-ul.header-list li, ul.header-right-list li, ul.nav-list li, ul.build-list li, ul.build-sns-list li, ul.investment-list li, ul.pr-center-list li, ul.recruit-list li, ul.trading-list li {
+ul.header-list li, ul.header-right-list li, ul.nav-list li, ul.build-list li, ul.build-sns-list li, ul.investment-list li, ul.pr-center-list li, ul.recruit-list li, ul.trading-list li, ul.footer-list li {
     float: left;
 }
 ul.header-list li a {
@@ -657,12 +657,15 @@ span.like-after {
     border-right: 1px solid #eaeaea;
     border-left: 1px solid #eaeaea;
 }
+.site-map > div:not(:last-child) {
+    border-right: 1px solid #eaeaea;
+}
 .site-map > div {
     display: inline-block;
 }
 .company-introduce {
-    width: 246px;
-    padding: 12px 0 0 21px;
+    width: 228px;
+    padding: 12px 0 3px 20px;
 }
 .site-map > div > h2 {
     font-size: 0;
@@ -679,7 +682,7 @@ h2.company-introduce-h2 {
     vertical-align: top;
 }
 dl.company-introduce-list {
-    width: 129px;
+    width: 125px;
 }
 .site-map div dl dt {
     font-size: 12px;
@@ -694,6 +697,95 @@ dl.company-introduce-list {
 dt.interval {
     margin-top: 7px;
 }
+.kerning {
+    letter-spacing: 0.7px;
+}
 .site-map div dl dt a, .site-map div dl dd a {
     display: block;
+}
+dl.company-introduce-right-list {
+    width: 97px;
+}
+.sustain-mg {
+    padding: 12px 0 1px 18px;
+}
+h2.sustain-mg-h2 {
+    background: url("../img/section-bottom/sustainability-management.png") no-repeat;
+}
+dl.sustain-mg-list {
+    width: 162px;
+}
+dl.sustain-mg-right-list {
+    width: 152px;
+}
+.investment-information {
+    padding: 12px 0 91px 16px;
+}
+h2.investment-information-h2 {
+    background: url("../img/section-bottom/investment-information.png") no-repeat;
+}
+dl.investment-information-list {
+    width: 81px;
+}
+dl.investment-information-right-list {
+    width: 119px;
+}
+.cyber-promotion {
+    padding: 12px 0 154px 20px;
+    vertical-align: top;
+}
+h2.cyber-promotion-h2 {
+    background: url("../img/section-bottom/cyber-promotion.png") no-repeat;
+}
+dl.cyber-promotion-list {
+    width: 112px;
+}
+ul.language {
+    margin-top: 49px;
+}
+ul.language li a {
+    font-family: "돋움",Dotum,"돋움체",DotumChe;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    display: block;
+}
+
+/*footer start*/
+
+footer {
+    border-top: 1px solid #dddddd;
+    line-height: 25px;
+}
+h2.footer-logo {
+    background: url("../img/footer/footer-logo.png") no-repeat left center;
+    display: inline-block;
+    font-size: 0;
+    padding: 9.5px 57px;
+}
+span.copyright {
+    font-size: 11px;
+    margin-left: 4px;
+}
+ul.footer-list {
+    position: absolute;
+    top: 13px;
+    right: 162px;
+    line-height: 11px;
+}
+ul.footer-list li a {
+    font-size: 12px;
+    letter-spacing: -0.5px;
+}
+ul.footer-list li:first-child {
+    padding-right: 8px;
+}
+ul.footer-list li:nth-child(2) {
+    padding: 0 8px 0 7px;
+}
+ul.footer-list li:last-child {
+    padding-left: 7px;
+}
+ul.footer-list li:not(:last-child) {
+    border-right: 1px solid #666666;
 }
