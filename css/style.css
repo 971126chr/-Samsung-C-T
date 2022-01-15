@@ -21,7 +21,7 @@ h1.header-logo a {
     background: url("../img/header/logo.png") no-repeat center;
     padding: 31px 75px;
 }
-ul.header-list::after, ul.header-right-list::after, ul.nav-list::after, ul.build-list::after, ul.build-sns-list::after, ul.investment-list::after, ul.pr-center-list::after, ul.recruit-list::after, ul.trading-list::after, ul.footer-list::after {
+ul.header-list::after, ul.header-right-list::after, ul.nav-list::after, ul.build-list::after, ul.build-sns-list::after, ul.investment-list::after, ul.pr-center-list::after, ul.recruit-list::after, ul.trading-list::after, ul.footer-list::after, ul.news-list li a::after, .main-click::after {
     display: block;
     content: "";
     clear: both;
@@ -30,7 +30,7 @@ ul.header-list {
     vertical-align: -webkit-baseline-middle;
     margin-left: 109px;
 }
-ul.header-list li, ul.header-right-list li, ul.nav-list li, ul.build-list li, ul.build-sns-list li, ul.investment-list li, ul.pr-center-list li, ul.recruit-list li, ul.trading-list li, ul.footer-list li {
+ul.header-list li, ul.header-right-list li, ul.nav-list li, ul.build-list li, ul.build-sns-list li, ul.investment-list li, ul.pr-center-list li, ul.recruit-list li, ul.trading-list li, ul.footer-list li, .main-click > div {
     float: left;
 }
 ul.header-list li a {
@@ -38,7 +38,7 @@ ul.header-list li a {
     background: url("../img/header/header-list-1.png") no-repeat left;
     padding: 34px 81px 28px 0;
 }
-ul.header-list li a:hover, ul.header-list li:nth-child(3) a:hover, ul.header-list li:last-child a:hover {
+/* ul.header-list li a:hover, ul.header-list li:nth-child(3) a:hover, ul.header-list li:last-child a:hover {
     font-size: 16px;
     font-weight: bold;
     color: #2f62d0;
@@ -49,7 +49,7 @@ ul.header-list li a:hover, ul.header-list li:nth-child(3) a:hover, ul.header-lis
 }
 ul.header-list li a:hover {
     padding-left: 0;
-}
+} */
 ul.header-list li.active a:hover {
     font-size: 0;
     vertical-align: baseline;
@@ -63,9 +63,12 @@ ul.header-list li:nth-child(3) a {
     background: url("../img/header/header-list-3.png") no-repeat center;
     padding: 34px 55px 28px 57px;
 }
-ul.header-list li:last-child a {
+ul.header-list li:nth-child(4) a {
     background: url("../img/header/header-list-4.png") no-repeat center;
     padding: 34px 33.5px 28px 89px;
+}
+ul.header-list li:last-child a, img.smartphone-samsung-city-img {
+    display: none;
 }
 ul.header-right-list {
     position: absolute;
@@ -212,6 +215,9 @@ img.section-bg {
     top: 0;
     left: 126px;
 }
+.smartphone-section-bg, img.smartphone-shortcut {
+    display: none;
+}
 ul.indicator {
     position: absolute;
     top: 11px;
@@ -239,6 +245,9 @@ ul.indicator li:nth-child(2) a {
 }
 ul.indicator li:last-child a {
     background: url("../img/section/indicator-text-3.png") no-repeat center;
+}
+.section-main > div:first-child {
+    display: none;
 }
 .section-main > div {
     width: 310px;
@@ -303,7 +312,7 @@ span.shortcut-h2-text {
 }
 .news {
     background: #e9f7fe;
-    padding: 13px 26px 29px 19px;
+    padding: 13px 26px 33px 19px;
     position: relative;
 }
 h3.news-h3 {
@@ -320,16 +329,18 @@ button.news-more {
     top: 18px;
     right: 26px;
 }
-dl.news-list {
-    line-height: 20px;
+ul.news-list {
+    line-height: 16px;
     margin-top: 18px;
 }
-dl.news-list dt {
-    float: left;
+ul.news-list li a {
+    display: block;
+}
+ul.news-list li span.text-left {
     font-size: 11px;
 }
-dl.news-list dd {
-    text-align: right;
+ul.news-list li span.text-right {
+    float: right;
     font-size: 12px;
 }
 .build-sns {
@@ -353,6 +364,7 @@ ul.build-sns-list li a {
     font-size: 0;
     background: url("../img/section/sns-btn-list-1.png") no-repeat;
     padding: 9px;
+    vertical-align: middle;
 }
 ul.build-sns-list li:nth-child(2) a {
     background: url("../img/section/sns-btn-list-2.png") no-repeat;
@@ -788,4 +800,312 @@ ul.footer-list li:last-child {
 }
 ul.footer-list li:not(:last-child) {
     border-right: 1px solid #666666;
+}
+
+/* 태블릿 화면*/
+
+@media all and (max-width:1023px) {
+    * {
+        box-sizing: border-box;
+    }
+    .wrap {
+        min-width: auto;
+        max-width: 1023px;
+    }
+    header {
+        background: none;
+    }
+    .header-content, .nav-content, .section-content, .site-map, .footer-content {
+        width: 100%;
+        padding: 0 60px;
+    }
+    ul.header-list {
+        display: block;
+        margin-left: 0;
+    }
+    ul.header-list li {
+        width: 25%;
+    }
+    ul.header-list li a {
+        padding-right: 123px;
+        background-position: center center;
+    }
+    ul.header-list li:last-child a {
+        padding: 34px 50px 28px 77px;
+    }
+    nav, ul.indicator, img.section-bg, .site-map-wrap, ul.footer-list {
+        display: none;
+    }
+    .section-content {
+        padding: 50px 60px 29px 60px;
+        text-align: center;
+    }
+    .smartphone-section-bg {
+        background: #c6dbe3;
+        display: block;
+        height: 160px;
+        position: relative;
+    }
+    .smartphone-section-deco {
+        height: inherit;
+    }
+    .smartphone-global-bg {
+        background: url("../img/smartphone/section/samsung-global-bg.png") no-repeat;
+        width: 276px;
+        height: 145px;
+        position: absolute;
+        top: -50px;
+        right: 0;
+    }
+    img.smartphone-bg {
+        position: absolute;
+        top: -26px;
+        left: 17px;
+    }
+    .section-main > div {
+        width: 520px;
+    }
+    .section-main > div:not(:first-child) {
+        margin-top: 130px;
+    }
+    .information {
+        margin-left: 0;
+    }
+    img.samsung-city-img {
+        width: 100%;
+    }
+    .sns-shortcut {
+        text-align: right;
+    }
+}
+
+/*스마트폰 화면*/
+
+@media all and (max-width:767px) {
+    .wrap {
+        min-width: 320px;
+        max-width: 767px;
+    }
+    header {
+        background: url("../img/smartphone/header/header-bg.png") repeat-x;
+    }
+    .header-content {
+        padding: 0 17px 0 16px;
+    }
+    h1.header-logo {
+        line-height: 40px;
+    }
+    h1.header-logo a {
+        background: url("../img/smartphone/header/smartphone-h1.png") no-repeat center;
+        padding: 20px 57px;
+        vertical-align: top;
+    }
+    ul.header-list {
+        padding: 0 0 0 1px;
+        line-height: 43px;
+    }
+    ul.header-list li a {
+        background: url("../img/smartphone/nav/nav-list-1.png") no-repeat left;
+        padding: 26px 27.5px 22px 22px;
+    }
+    ul.header-list li:nth-child(2) a {
+        background: url("../img/smartphone/nav/nav-list-2.png") no-repeat center center;
+        padding: 26px 15.5px 22px 51px;
+    }
+    ul.header-list li:nth-child(3) a {
+        background: url("../img/smartphone/nav/nav-list-3.png") no-repeat center center;
+        padding: 26px 42px 22px;
+    }
+    ul.header-list li:last-child a {
+        background: url("../img/smartphone/nav/nav-list-4.png") no-repeat center right;
+        padding: 26px 39px 22px;
+        display: initial;
+    }
+    .search, img.build-deco, .trading img.trading-deco, 
+    ul.header-list li:nth-child(4) a, h2.shortcut-h2 img.shortcut-home, img.samsung-city-img, h3.build-sns-h3, img.samsung-build-logo, .sns-shortcut {
+        display: none;
+    }
+    ul.header-right-list {
+        top: 12px;
+        right: 20px;
+    }
+    ul.header-right-list li a {
+        background: url("../img/smartphone/header/right-list-1.png") no-repeat left;
+        padding: 9px 27.5px 0 19.5px;
+    }
+    ul.header-right-list li:last-child a {
+        background: url("../img/smartphone/header/right-list-2.png") no-repeat right;
+        padding: 9px 29px 0 36px;
+    }
+    .section-content {
+        padding: 0 0 0 0;
+    }
+    .smartphone-section-deco {
+        background: url("../img/smartphone/section/section-top-deco.png") repeat-x;
+        width: 100%;
+        height: 8px;
+    }
+    .smartphone-global-bg {
+        top: 0;
+    }
+    img.smartphone-bg {
+        top: 14px;
+    }
+    .section-main > div:first-child {
+        display: block;
+        border-bottom: 2px solid #05b1ca;
+    }
+    .section-main {
+        text-align: initial;
+    }
+    .section-main > div {
+        width: 100%;
+    }
+    .section-main > div:not(:first-child) {
+        margin-top: 0;
+    }
+    .build {
+        border-top: none;
+        border-bottom: 2px solid #05b1ca;
+    }
+    .main-click > div {
+        width: 50%;
+        line-height: 32px;
+        font-size: 0;
+        padding: 10px 29px 8px 15px;
+    }
+    .main-click > div.active {
+        background: #05b1ca;
+    }
+    h2.smartphone-trading-h2-text {
+        background: url("../img/section/trading-h2-deco.png") no-repeat left center;
+    }
+    h2.smartphone-trading-h2-text a, h2.smartphone-build-h2-text a {
+        background: url("../img/smartphone/section/trading-text.png") no-repeat right center;
+        display: block;
+    }
+    h2.smartphone-build-h2-text {
+        background: url("../img/smartphone/section/build-active-home.png") no-repeat left center;
+    }
+    h2.smartphone-build-h2-text a {
+        background: url("../img/smartphone/section/build-text.png") no-repeat right center;
+    }
+    span.smartphone-trading-bg {
+        background: url("../img/smartphone/section/trading-deco.png") no-repeat;
+        width: 154px;
+        height: 75px;
+        position: absolute;
+        top: -75px;
+        left: 0;
+    }
+    span.smartphone-build-bg {
+        background: url("../img/smartphone/section/build-deco.png") no-repeat;
+        width: 127px;
+        height: 146px;
+        position: absolute;
+        top: -146px;
+        right: 6px;
+    }
+    .build .shortcut {
+        padding: 0;
+    }
+    h2.shortcut-h2 {
+        padding: 0 0 0 17px;
+        background: #cdeff4;
+        border-bottom: 1px solid #b7d1d4;
+        line-height: 38.5px;
+        text-align: center;
+    }
+    img.smartphone-shortcut {
+        display: initial;
+    }
+    span.shortcut-h2-text {
+        background: url("../img/smartphone/section/build-shortcut-text.png") no-repeat right center;
+        padding: 8.5px 58px 8.5px 67px;
+    }
+    .build ul.build-list, .build ul.build-list li:nth-child(3) a {
+        padding: 0;
+    }
+    .build ul.build-list li {
+        width: 50%;
+        line-height: 46px;
+        padding-left: 20px;
+    }
+    .build ul.build-list li::before {
+        display: none;
+    }
+    .build ul.build-list li:not(:last-child) {
+        border-bottom: 1px solid #dddddd;
+    }
+    .build ul.build-list li a {
+        display: block;
+        padding: 0;
+        position: relative;
+    }
+    .build ul.build-list li:nth-child(odd) {
+        padding: 0 20px 0 21px;
+    }
+    .build ul.build-list li:nth-child(even) {
+        padding: 0 20px;
+    }
+    .build ul.build-list li a {
+        background: url("../img/smartphone/section/build-list-1.png") no-repeat left center;
+    }
+    .build ul.build-list li:nth-child(2) a {
+        background: url("../img/smartphone/section/build-list-2.png") no-repeat left center;
+    }
+    .build ul.build-list li:nth-child(3) a {
+        background: url("../img/smartphone/section/build-list-3.png") no-repeat left center;
+    }
+    .build ul.build-list li:nth-child(4) a {
+        background: url("../img/smartphone/section/build-list-4.png") no-repeat left center;
+    }
+    .build ul.build-list li:last-child a {
+        background: url("../img/smartphone/section/build-list-5.png") no-repeat left center;
+    }
+    .build ul.build-list li a::after {
+        background: url("../img/smartphone/section/build-list-arrow.png") no-repeat right center;
+        content: "";
+        padding: 8px;
+        position: absolute;
+        top: 14px;
+        right: 1px;
+    }
+    .build ul.build-list li:nth-child(even) a::after {
+        right: 0;
+    }
+    img.smartphone-samsung-city-img {
+        display: block;
+        width: 100%;
+    }
+    .news {
+        padding: 13px 19px 25px 20px;
+    }
+    button.news-more {
+        top: 20px;
+        right: 20px;
+    }
+    ul.news-list {
+        line-height: 18px;
+        margin-top: 22px;
+    }
+    .build-sns {
+        padding: 0 3.5px;
+    }
+    ul.build-sns-list {
+        position: unset;
+        line-height: 63px;
+    }
+    ul.build-sns-list li:not(:last-child) {
+        margin-right: 0;
+    }
+    ul.build-sns-list li {
+        width: 25%;
+    }
+    ul.build-sns-list li a {
+        font-size: 12px;
+        letter-spacing: -2px;
+        background: url("../img/smartphone/section/build-sns-list-1.png") no-repeat top center;
+        padding: 17px;
+    }
 }
