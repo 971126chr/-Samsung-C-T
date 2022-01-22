@@ -246,6 +246,10 @@ ul.indicator li:nth-child(2) a {
 ul.indicator li:last-child a {
     background: url("../img/section/indicator-text-3.png") no-repeat center;
 }
+.section-main {
+    position: relative;
+    padding: 0 325px;
+}
 .section-main > div:first-child {
     display: none;
 }
@@ -253,9 +257,11 @@ ul.indicator li:last-child a {
     width: 310px;
     background: #ffffff;
     display: inline-block;
-    position: relative;
 }
 .build {
+    position: absolute;
+    top: 0;
+    left: 0;
     border-top: 7px solid #005f9a;
     border-bottom: 3px solid #05b1ca;
 }
@@ -407,7 +413,6 @@ img.samsung-build-logo {
     border-top: 3px solid #6d6d6d;
     border-bottom: 3px solid #7b7b7b;
     vertical-align: bottom;
-    margin-left: 9px;
     z-index: 1;
 }
 .information .banner {
@@ -549,6 +554,9 @@ ul.recruit-list li:last-child {
     margin-left: 20px;
 }
 .trading {
+    position: absolute;
+    top: 0;
+    right: 0;
     vertical-align: top;
     border-top: 7px solid #3551b1;
     border-bottom: 3px solid #3978ee;
@@ -862,20 +870,18 @@ ul.footer-list li:not(:last-child) {
         top: -26px;
         left: 17px;
     }
-    .section-main > div {
-        width: 520px;
-    }
-    .section-main > div:not(:first-child) {
-        margin-top: 130px;
-    }
-    .information {
-        margin-left: 0;
+    .section-main {
+        padding: 0;
     }
     img.samsung-city-img {
         width: 100%;
     }
     .sns-shortcut {
         text-align: right;
+    }
+    .information {
+        position: relative;
+        margin-top: 510px;
     }
 }
 
@@ -961,12 +967,13 @@ ul.footer-list li:not(:last-child) {
     .section-main > div {
         width: 100%;
     }
-    .section-main > div:not(:first-child) {
-        margin-top: 0;
-    }
     .build {
+        position: relative;
         border-top: none;
         border-bottom: 2px solid #05b1ca;
+    }
+    .trading {
+        position: relative;
     }
     .main-click > div {
         width: 50%;
@@ -1106,6 +1113,9 @@ ul.footer-list li:not(:last-child) {
         font-size: 12px;
         letter-spacing: -2px;
         background: url("../img/smartphone/section/build-sns-list-1.png") no-repeat top center;
-        padding: 17px;
+        padding: 0;
+    }
+    .information {
+        margin-top: 0;
     }
 }
