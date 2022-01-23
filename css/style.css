@@ -1109,6 +1109,7 @@ ul.footer-list li:not(:last-child) {
     ul.build-sns-list li {
         padding: 10px 0;
         width: 25%;
+        text-align: center;
     }
     ul.build-sns-list li a {
         font-size: 12px;
@@ -1131,6 +1132,9 @@ ul.footer-list li:not(:last-child) {
     }
     .information {
         margin-top: 0;
+    }
+    .promotion {
+        text-align: center;
     }
     .footer-content {
         padding: 0 15px;
