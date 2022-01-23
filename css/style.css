@@ -873,7 +873,10 @@ ul.footer-list li:not(:last-child) {
     .section-main {
         padding: 0;
     }
-    img.samsung-city-img {
+    .section-main > div {
+        width: 49%;
+    }
+    .section-main > div:last-child {
         width: 100%;
     }
     .sns-shortcut {
@@ -928,7 +931,7 @@ ul.footer-list li:not(:last-child) {
         display: initial;
     }
     .search, img.build-deco, .trading img.trading-deco, 
-    ul.header-list li:nth-child(4) a, h2.shortcut-h2 img.shortcut-home, img.samsung-city-img, h3.build-sns-h3, img.samsung-build-logo, .sns-shortcut {
+    ul.header-list li:nth-child(4) a, h2.shortcut-h2 img.shortcut-home, img.samsung-city-img, h3.build-sns-h3, img.samsung-build-logo, .sns-shortcut, .information .banner, h2.footer-logo, .build ul.build-list li::before, .section-main > div:nth-child(3) {
         display: none;
     }
     ul.header-right-list {
@@ -1038,9 +1041,6 @@ ul.footer-list li:not(:last-child) {
         line-height: 46px;
         padding-left: 20px;
     }
-    .build ul.build-list li::before {
-        display: none;
-    }
     .build ul.build-list li:not(:last-child) {
         border-bottom: 1px solid #dddddd;
     }
@@ -1101,21 +1101,42 @@ ul.footer-list li:not(:last-child) {
     }
     ul.build-sns-list {
         position: unset;
-        line-height: 63px;
+        line-height: 21px;
     }
     ul.build-sns-list li:not(:last-child) {
         margin-right: 0;
     }
     ul.build-sns-list li {
+        padding: 10px 0;
         width: 25%;
     }
     ul.build-sns-list li a {
         font-size: 12px;
         letter-spacing: -2px;
         background: url("../img/smartphone/section/build-sns-list-1.png") no-repeat top center;
-        padding: 0;
+        padding: 34px 17px 0 17px;
+        display: inline-block;
+    }
+    ul.build-sns-list li:nth-child(2) a {
+        background: url("../img/smartphone/section/build-sns-list-2.png") no-repeat top center;
+    }
+    ul.build-sns-list li:nth-child(3) a {
+        background: url("../img/smartphone/section/build-sns-list-3.png") no-repeat top center;
+    }
+    ul.build-sns-list li:last-child a {
+        background: url("../img/smartphone/section/build-sns-list-4.png") no-repeat top center;
+    }
+    .trading {
+        margin-left: 0;
     }
     .information {
         margin-top: 0;
+    }
+    .footer-content {
+        padding: 0 15px;
+    }
+    span.copyright {
+        margin-left: 0;
+        font-size: 10px;
     }
 }
